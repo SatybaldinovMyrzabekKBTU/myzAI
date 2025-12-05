@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>myzAI Studio</title>
+    <!-- Tailwind CSS через CDN (для быстрого старта ок, но лучше потом установить через npm) -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
     <script>
@@ -31,6 +32,7 @@
       body {
         background-color: #0f172a;
         color: #f8fafc;
+        margin: 0; /* Убираем отступы по краям */
       }
       /* Custom scrollbar for technical look */
       ::-webkit-scrollbar {
@@ -48,18 +50,13 @@
         background: #64748b; 
       }
     </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://aistudiocdn.com/react@^19.2.1/",
-    "react": "https://aistudiocdn.com/react@^19.2.1",
-    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
-    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.31.0"
-  }
-}
-</script>
 </head>
   <body>
+    <!-- Сюда React вставит ваш чат -->
     <div id="root"></div>
+
+    <!-- ВАЖНО: Вот эта строка запускает весь сайт! -->
+    <!-- Убедитесь, что ваш файл называется именно index.tsx -->
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>
