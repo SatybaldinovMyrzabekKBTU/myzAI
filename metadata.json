@@ -1,0 +1,5 @@
+{
+  "name": "myzAI Studio",
+  "description": "An AI-powered music creative assistant. Generate lyrics, design album artwork, and brainstorm musical concepts using Google Gemini.",
+  "requestFramePermissions": []
+}
